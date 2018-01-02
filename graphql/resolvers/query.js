@@ -1,8 +1,9 @@
 const { models } = require('../../models');
 
+
 module.exports = {
     event(root, {id} ) {
-        return models.Event.findById(id);
+        return  models.Event.findById(id);
     },
     events(root) {
         return models.Event.findAll();
